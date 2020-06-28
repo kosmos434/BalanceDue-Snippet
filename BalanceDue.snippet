@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<_locDefinition xmlns="urn:locstudio">
+    <_locDefault _loc="locNone" />
+    <_locTag _loc="locData">Title</_locTag>
+    <_locTag _loc="locData">Description</_locTag>
+    <_locTag _loc="locData">Author</_locTag>
+    <_locTag _loc="locData">ToolTip</_locTag>
+</_locDefinition>
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>BalanceDue</Title>
+                        <Shortcut></Shortcut>
+			<Description>Adds Murach's Famous "BalanceDue" Expression</Description>
+			<Author>kosmos434</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>Operator</ID>
+					<ToolTip>Equal/less than/greater than</ToolTip>
+					<Default>></Default>
+				</Literal>
+
+				<Literal>
+					<ID>Value</ID>
+					<ToolTip>100/0/Whatever</ToolTip>
+					<Default>0</Default>
+				</Literal>
+
+				<!-- <Literal>
+					<ID>SynonymName</ID>
+					<ToolTip>Name of the synonym</ToolTip>
+					<Default>SynonymName</Default>
+				</Literal> -->
+			</Declarations>
+			<Code Language="SQL">
+				<![CDATA[InvoiceTotal - PaymentTotal - CreditTotal $Operator$ $Value$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
